@@ -1,0 +1,35 @@
+{
+  "name": "fenix-cli",
+  "version": "0.0.1",
+  "description": "A command line utility for managing Fenix web servers.",
+  "bin": {
+    "fenix": "./bin/CLI.js"
+  },
+  "main": "./bin/CLI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": ">= 0.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coreybutler/fenix-cli.git"
+  },
+  "keywords": [
+    "web",
+    "server",
+    "static"
+  ],
+  "author": "Corey Butler <corey@coreybutler.com>",
+  "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+  "bugs": {
+    "url": "https://github.com/coreybutler/fenix-cli/issues"
+  },
+  "homepage": "https://github.com/coreybutler/fenix-cli",
+  "dependencies": {
+    "colors": "~0.6.2",
+    "request": "^2.34.0"
+  }
+}

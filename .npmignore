@@ -1,0 +1,7 @@
+Gruntfile.js
+logs
+docs
+node_modules
+*.md
+.*
+_*

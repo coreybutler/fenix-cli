@@ -1,5 +1,5 @@
 {
-  "name": "fenix",
+  "name": "fenix-cli",
   "version": "0.0.1",
   "description": "A command line utility for managing Fenix web servers.",
   "bin": {

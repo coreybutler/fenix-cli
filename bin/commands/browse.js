@@ -13,7 +13,7 @@ var timeout = setTimeout(function(){
   process.exit(1);
 },3500);
 
-request.put('http://127.0.0.1:33649/server/'+server+'/unshare',function(err,res,body){
+request.put('http://127.0.0.1:33649/server/'+server+'/status',function(err,res,body){
   clearTimeout(timeout);
   if (err){
     if (err.message.indexOf('ECONNREFUSED') >= 0){
@@ -25,5 +25,7 @@ request.put('http://127.0.0.1:33649/server/'+server+'/unshare',function(err,res,
       return;
     }
   }
-  console.log('\n  Stopped sharing server.'.green.bold);
+  var data = JSON.parse(body);
+  var opener = require('opener');
+  opener('http://127.0.0.1:'+data.port.toString());
 });

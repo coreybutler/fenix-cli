@@ -13,7 +13,7 @@ var timeout = setTimeout(function(){
   process.exit(1);
 },3500);
 
-request.put('http://127.0.0.1:33649/server/'+server+'/unshare',function(err,res,body){
+request.del('http://127.0.0.1:33649/server/'+server,function(err,res,body){
   clearTimeout(timeout);
   if (err){
     if (err.message.indexOf('ECONNREFUSED') >= 0){
@@ -25,5 +25,10 @@ request.put('http://127.0.0.1:33649/server/'+server+'/unshare',function(err,res,
       return;
     }
   }
-  console.log('\n  Stopped sharing server.'.green.bold);
+  if (res.statusCode === 404){
+    console.log('Server not found.'.red.bold);
+    return;
+  }
+  console.log('\n  Server Removed.'.green.bold);
 });
+

@@ -2,6 +2,8 @@
 
 The Fenix command line interface provides a small utility for managing Fenix servers from the console.
 
+This console application can be installed via npm: `npm install -g fenix-cli`.
+
 For updated information, or to download the main application, please visit the [Fenix Website](http://www.fenixwebserver.com).
 
 [![Support via Gittip](https://rawgithub.com/twolfson/gittip-badge/0.2.0/dist/gittip.png)](https://www.gittip.com/coreybutler/)

@@ -2,6 +2,7 @@ Gruntfile.js
 logs
 docs
 node_modules
+bin/commands/cd.js
 *.md
 .*
 _*

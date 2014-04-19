@@ -39,6 +39,7 @@ Object.keys(shortcuts).forEach(function(sc){
   }
 });
 
+// Add options
 var opts = {};
 for(var o in base){
   opts[o] = base[o];

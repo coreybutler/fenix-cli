@@ -7,6 +7,7 @@ var path = require('path'),
     user = require('./lib/permissions'),
     pkg = require(path.join(process.mainModule.paths[0],'..','..','package.json'));
 
+// Add colors for pretty output
 require('colors');
 
 // AVAILABLE CLI OPTIONS

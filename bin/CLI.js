@@ -24,6 +24,7 @@ var base = {
   'version': 'Print the current version of Fenix.'
 };
 
+// Shortcuts
 var shortcuts = {
   'v': 'version',
   'h': 'help',

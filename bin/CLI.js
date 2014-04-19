@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+// Include dependencies
 var path = require('path'),
     fs = require('fs'),
     optimist = require('optimist'),

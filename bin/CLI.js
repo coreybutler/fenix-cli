@@ -69,6 +69,7 @@ var minOptions = function(argv){
     }
   }
 
+  // Display help
   optimist.describe(opts);
   if (cmd == null){
     throw('');

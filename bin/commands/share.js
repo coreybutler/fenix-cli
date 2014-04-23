@@ -45,7 +45,7 @@ request.put('http://127.0.0.1:33649/server/'+server+'/share',function(err,res,bo
         console.log('Fenix did not respond (timeout)'.magenta.bold);
         process.exit(1);
       },4500);
-      console.log('\n Sharing...'.yellow.bold);
+      console.log('\nSharing...'.yellow.bold);
       request.put('http://127.0.0.1:33649/server/'+data.id+'/share',function(err,res,body){
         clearTimeout(timeout);
         if (err){
@@ -58,7 +58,6 @@ request.put('http://127.0.0.1:33649/server/'+server+'/share',function(err,res,bo
             return;
           }
         }
-        console.log(res.statusCode,body);
         var _data = JSON.parse(body);
         console.log('\n  Server Shared:'.green.bold);
         console.log('  '+_data.publicUrl.cyan.bold);

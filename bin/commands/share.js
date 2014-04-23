@@ -66,6 +66,7 @@ request.put('http://127.0.0.1:33649/server/'+server+'/share',function(err,res,bo
     });
   } else {
     var data = body;
+    data = typeof data === 'string' ? JSON.parse(data) : data;
     console.log('\n  Server Shared:'.green.bold);
     console.log('  '+(data.publicUrl||'Unknown').cyan.bold);
   }

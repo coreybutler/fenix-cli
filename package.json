@@ -1,6 +1,6 @@
 {
   "name": "fenix-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A command line utility for managing Fenix web servers.",
   "bin": {
     "fenix": "./bin/CLI.js"

@@ -23,7 +23,8 @@ var base = {
   'stop': 'Stop a running server by name, port, ID, or path.',
   'share': 'Share a server over the internet.',
   'unshare': 'Stop sharing a server over the internet.',
-  'version': 'Print the current version of Fenix.'
+  'version': 'Print the current version of Fenix.',
+  'migrate': 'A helper utility for migrating to a newer version of Fenix.'
 };
 
 // Shortcuts
@@ -104,6 +105,7 @@ var validOption = function(argv){
     case 'list':
     case 'remove':
     case 'browse':
+    case 'migrate':
       return true;
     // All other options do not require additional parameters, or they
     // are not valid.

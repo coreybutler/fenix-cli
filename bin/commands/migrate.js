@@ -45,6 +45,6 @@ request.get('http://127.0.0.1:33649/server/list',function(err,res,body){
     body = LZString.compressToEncodedURIComponent(body)
 
     var opener = require('opener');
-    opener('http://127.0.0.1:8000/?servers=' + body);
+    opener('https://migrate.fenixwebserver.com/?servers=' + body);
   });
 });
